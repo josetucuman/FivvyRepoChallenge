@@ -31,6 +31,25 @@ This project is a demonstration application for Fivvy Prject. It provides basic 
 
 This app run on `localhost:9090`
 
+## Usage
+### Create a new Disclaimer
+Endpoint: POST /disclaimers
+Input parameters: A DisclaimerDto object in JSON format with the fields name, text, and version.
+Example request:
 
+{
 
+  "name": "Example Disclaimer",
+  
+  "text": "This is an example disclaimer.",
+  
+  "version": "1.0"
+  
+}
+### Deleting an existent Disclaimer
+
+- Endpoint `/disclaimers/{id}`
+- Parameter: ID Disclaimer
+
+This application use H2 Database. 
 
